@@ -1,4 +1,7 @@
 # hp-41_hours
+
+**NOTE:** This program is part of the ISENE.ROM (https://github.com/isene/hp-41_isene-rom). The FOCAL listing can be found in the "src" folder of that project. Any updates and new version will be found there.
+
 A customized program for tracking hours worked on projects.
 
 There exists a simple hour registration program in the ISENE.ROM (https://github.com/isene/hp-41_isene-rom). This program expands the functionality to make it easier to enter hours when you are working for several (up to 5) different projects simultaneously. To use this program, you must first create the XM ASCII file "HPROJS" and enter an abbreviation for each project (make it 1 to 3 letters). One project per record in the file. The program will create a custom menu out of these project abbreviations, like "P1 P2 P3 P4", where each abbreviation corresponds to a local label (here A to D). In this example hours to the "P1" project is registered by pressing the A key (in User mode), while hours to the "P3" project is registered pressing C.
