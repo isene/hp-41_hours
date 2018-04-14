@@ -11,3 +11,6 @@ To register hours, run the program. The current date will be in the X register. 
 In addition to the dynamically created local labels A - E, pressing the local label "a" (or using the global label "PED") will let you edit the HPROJS file. Label "c" (or "HCLR") will clear (empty) the HOURSF file and "e" (or "HED") will let you edit the HOURSF file (in case you have misregistered something).
 
 The program depends on the ISENE.ROM routines "SKPTACR", "FLSZ+" and "FLSZ-" (or you may just take those rotuines from the module).
+
+## License
+This software is released into the Public Domain.
