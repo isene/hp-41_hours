@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="150" height="150" fill="#1a1f2e"/>
+  
+  <!-- Clock face -->
+  <g transform="translate(75, 60)">
+    <circle cx="0" cy="0" r="35" fill="#2c2c2c" stroke="#444" stroke-width="2"/>
+    <circle cx="0" cy="0" r="32" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    
+    <!-- Hour markers -->
+    <g stroke="#6b7280" stroke-width="1">
+      <line x1="0" y1="-30" x2="0" y2="-25"/>
+      <line x1="26" y1="-15" x2="22" y2="-13"/>
+      <line x1="30" y1="0" x2="25" y2="0"/>
+      <line x1="26" y1="15" x2="22" y2="13"/>
+      <line x1="0" y1="30" x2="0" y2="25"/>
+      <line x1="-26" y1="15" x2="-22" y2="13"/>
+      <line x1="-30" y1="0" x2="-25" y2="0"/>
+      <line x1="-26" y1="-15" x2="-22" y2="-13"/>
+    </g>
+    
+    <!-- Numbers -->
+    <g font-family="monospace" font-size="6" fill="#94a3b8" text-anchor="middle">
+      <text x="0" y="-20">12</text>
+      <text x="18" y="2">3</text>
+      <text x="0" y="22">6</text>
+      <text x="-18" y="2">9</text>
+    </g>
+    
+    <!-- Clock hands -->
+    <!-- Hour hand -->
+    <line x1="0" y1="0" x2="0" y2="-12" stroke="#3b82f6" stroke-width="3" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" dur="60s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Minute hand -->
+    <line x1="0" y1="0" x2="0" y2="-20" stroke="#60a5fa" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" dur="5s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="2" fill="#fff"/>
+    
+    <!-- Digital time display -->
+    <rect x="-20" y="40" width="40" height="10" fill="#0a4d0a" stroke="#333" stroke-width="1" rx="1"/>
+    <text x="0" y="47" font-family="monospace" font-size="6" fill="#00ff00" text-anchor="middle">14:35:27</text>
+  </g>
+  
+  <!-- HP-41 Calculator -->
+  <g transform="translate(75, 115)">
+    <!-- Calculator body (compact) -->
+    <rect x="-30" y="-10" width="60" height="25" rx="3" fill="#2c2c2c" stroke="#444" stroke-width="1.5"/>
+    
+    <!-- LCD Display -->
+    <rect x="-25" y="-6" width="50" height="8" rx="1" fill="#0a4d0a" stroke="#333" stroke-width="0.5"/>
+    <text x="0" y="-1" font-family="monospace" font-size="5" fill="#00ff00" text-anchor="middle">TIME CALC</text>
+    
+    <!-- Time calculation -->
+    <rect x="-23" y="3" width="46" height="8" fill="#1a1a1a" stroke="#333" stroke-width="0.5" rx="0.5"/>
+    <g font-family="monospace" font-size="3.5" fill="#00ff00">
+      <text x="-20" y="8">8.5h = 8:30:00</text>
+    </g>
+  </g>
+  
+  <!-- Time conversions -->
+  <g transform="translate(25, 40)" opacity="0.7">
+    <text x="0" y="0" font-family="monospace" font-size="4" fill="#60a5fa">Convert:</text>
+    <text x="0" y="6" font-family="monospace" font-size="3.5" fill="#94a3b8">• Dec → HMS</text>
+    <text x="0" y="11" font-family="monospace" font-size="3.5" fill="#94a3b8">• HMS → Dec</text>
+    <text x="0" y="16" font-family="monospace" font-size="3.5" fill="#94a3b8">• Time math</text>
+  </g>
+  
+  <!-- Ruby gem indicator -->
+  <g transform="translate(125, 40)" opacity="0.8">
+    <polygon points="0,-4 3,-2 3,2 0,4 -3,2 -3,-2" fill="#dc2626" stroke="#991b1b" stroke-width="0.8"/>
+    <text x="0" y="10" font-family="monospace" font-size="3.5" fill="#dc2626" text-anchor="middle">Ruby</text>
+  </g>
+  
+  <!-- Time zones visualization -->
+  <g transform="translate(75, 135)" opacity="0.6">
+    <g font-family="monospace" font-size="3" fill="#60a5fa" text-anchor="middle">
+      <text x="-30" y="0">UTC-5</text>
+      <text x="-15" y="0">UTC</text>
+      <text x="0" y="0">UTC+1</text>
+      <text x="15" y="0">UTC+8</text>
+      <text x="30" y="0">UTC+12</text>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <text x="75" y="145" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">HOURS</text>
+  <text x="75" y="153" font-family="monospace" font-size="6" fill="#94a3b8" text-anchor="middle">Time &amp; Hours Calculator</text>
+</svg>
